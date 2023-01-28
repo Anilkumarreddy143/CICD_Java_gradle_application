@@ -8,7 +8,6 @@ pipeline{
             agent {
                 docker {
                     image 'openjdk:11'
-                    label 'jdk'
                 }
             }
             steps{
