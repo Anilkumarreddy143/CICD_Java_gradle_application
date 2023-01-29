@@ -5,7 +5,6 @@ pipeline{
     }
     stages{
         stage("sonar quality check"){
-            agent {
             steps{
                 script{
                     withSonarQubeEnv(credentialsId: 'sonar-token') {
